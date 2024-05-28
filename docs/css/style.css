@@ -77,8 +77,8 @@ body {
 
 /* Updated styles for timeline images */
 .cd-timeline__img {
-    width: 150px; /* Increased width of images */
-    height: 150px; /* Increased height of images */
+    width: 2500px; /* Increased width of images */
+    height: 250px; /* Increased height of images */
     margin-right: 20px; /* Added margin between image and content */
     border-radius: 10px; /* Rounded corners */
 }
