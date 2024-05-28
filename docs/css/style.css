@@ -58,7 +58,7 @@ body {
     border-radius: 10px;
     padding: 1.5rem; /* Increased padding */
     position: relative;
-    width: calc(100% - 120px); /* Adjusted width to accommodate image and space between image and text */
+    width: calc(50% - 60px); /* Adjusted width to accommodate image and space between image and text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
