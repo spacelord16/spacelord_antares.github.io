@@ -37,60 +37,6 @@ main {
     padding: 2rem;
 }
 
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: #ff5252;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.timeline-event {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 0;
-    position: relative;
-}
-
-.timeline-date {
-    background-color: #ff5252;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    font-weight: bold;
-}
-
-.timeline-content {
-    background-color: #fff;
-    border: 2px solid #ff5252;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 60px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.timeline-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -112,4 +58,89 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: #fff;
+}
+
+/* Timeline Styles */
+
+.cd-timeline {
+    overflow: hidden;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.cd-timeline__container {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.cd-timeline__container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: #ff5252;
+    transform: translateX(-50%);
+}
+
+.cd-timeline__block {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cd-timeline__block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.cd-timeline__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: #ff5252;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.cd-timeline__img img {
+    width: 40px;
+    height: 40px;
+}
+
+.cd-timeline__content {
+    background: #fff;
+    border: 2px solid #ff5252;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cd-timeline__date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5252;
+}
+
+/* Animation */
+@keyframes cd-bounce-1 {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);    
+    }
 }

@@ -6,7 +6,6 @@
     <title>Our Journey Together</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vertical-timeline-component/2.3.0/style.min.css" integrity="sha512-hO1u9xg78UJW1AjE7ZZwSgOBUJ8JgZnNqWthUtM2UflzLhSiPs4gPYnW65fZ9N2/33L9KD+2m0VoTdQmPFl9Tw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -20,34 +19,33 @@
         </nav>
     </header>
     <main>
-        <section id="timeline">
-            <h2>Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <div class="timeline-date">Date of Image 1</div>
-                    <img src="images/image1.webp" alt="Image 1">
+        <section id="timeline" class="cd-timeline js-cd-timeline">
+            <div class="container max-width-lg cd-timeline__container">
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--picture">
+                        <img src="images/image1.webp" alt="Image 1">
+                    </div>
+                    <div class="cd-timeline__content text-component">
+                        <h2>Our First Adventure</h2>
+                        <p class="color-contrast-medium">A description of the event can go here. Share your memories or stories about this picture.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">2024</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">Date of Image 2</div>
-                    <img src="images/image2.jpg" alt="Image 2">
+                <div class="cd-timeline__block">
+                    <div class="cd-timeline__img cd-timeline__img--picture">
+                        <img src="images/image2.jpg" alt="Image 2">
+                    </div>
+                    <div class="cd-timeline__content text-component">
+                        <h2>A Day to Remember</h2>
+                        <p class="color-contrast-medium">Another description can go here. Share more memories or stories about this picture.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="cd-timeline__date">2023</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">Date of Image 3</div>
-                    <img src="images/image2.jpg" alt="Image 3">
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">Date of Image 4</div>
-                    <img src="images/image2.jpg" alt="Image 4">
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">Date of Image 5</div>
-                    <img src="images/image2.jpg" alt="Image 5">
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">Date of Image 6</div>
-                    <img src="images/image2.jpg" alt="Image 6">
-                </div>
-                <!-- Add more timeline events as needed -->
+                <!-- Add more timeline blocks as needed -->
             </div>
         </section>
         <section id="gallery">
