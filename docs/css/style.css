@@ -38,7 +38,7 @@ header nav ul li a:hover {
 /* Updated background color for body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #8B0000; /* Changed background color to light maroon */
+    background-color: #dc6c6c; /* Changed background color to light maroon */
     margin: 0;
     padding: 0;
 }
@@ -77,8 +77,8 @@ body {
 
 /* Updated styles for timeline images */
 .cd-timeline__img {
-    width: 2500px; /* Increased width of images */
-    height: 250px; /* Increased height of images */
+    width: 450px; /* Increased width of images */
+    height: 450px; /* Increased height of images */
     margin-right: 20px; /* Added margin between image and content */
     border-radius: 10px; /* Rounded corners */
 }
