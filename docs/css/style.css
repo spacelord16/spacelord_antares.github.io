@@ -1,6 +1,6 @@
 /* Updated CSS for header */
 header {
-    background-color: #ff5252; /* Changed header background color */
+    background-color: #8B0000; /* Changed header background color to light maroon */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -25,25 +25,25 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem; /* Increased font size */
+    padding: 0.5rem 1rem; /* Added padding to navigation links */
+    border: 2px solid #fff; /* Added border to navigation links */
+    border-radius: 20px; /* Rounded corners for navigation links */
+    transition: all 0.3s ease; /* Smooth transition on hover */
 }
 
-/* Updated background gradient for body */
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background color on hover */
+}
+
+/* Updated background color for body */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #f6d365 0%, #fda085 100%); /* Changed background gradient */
+    background-color: #8B0000; /* Changed background color to light maroon */
     margin: 0;
     padding: 0;
 }
 
-/* Updated styles for footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ff5252; /* Changed footer background color */
-    color: #fff;
-}
-
-/* Updated timeline block styles */
+/* Updated styles for timeline blocks */
 .cd-timeline__block {
     display: flex;
     margin-bottom: 2rem;
@@ -58,8 +58,12 @@ footer {
     border-radius: 10px;
     padding: 1.5rem; /* Increased padding */
     position: relative;
-    width: calc(100% - 100px); /* Adjusted width to accommodate image */
+    width: calc(100% - 120px); /* Adjusted width to accommodate image and space between image and text */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cd-timeline__content h2 {
+    margin-top: 0; /* Removed top margin for better spacing */
 }
 
 .cd-timeline__date {
@@ -71,34 +75,17 @@ footer {
     right: 0.5rem;
 }
 
-/* Added styles for timeline images */
+/* Updated styles for timeline images */
 .cd-timeline__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100px; /* Increased image size */
-    height: 100px; /* Increased image size */
-    background: #fff;
-    border-radius: 50%; /* Rounded image */
-    border: 5px solid #ff5252;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    margin-right: 20px; /* Added margin between image and content */
 }
 
 .cd-timeline__img img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%; /* Rounded image */
-}
-
-/* Added hover effect for timeline blocks */
-.cd-timeline__block:hover .cd-timeline__img {
-    transform: scale(1.1); /* Enlarge image on hover */
-}
-
-.cd-timeline__block:hover .cd-timeline__content {
-    border-color: #ff5252; /* Change border color on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
 /* Added media query for better responsiveness */
@@ -110,6 +97,7 @@ footer {
 
     .cd-timeline__img {
         margin-bottom: 1rem; /* Added space between image and content */
+        margin-right: 0; /* Removed right margin for images on smaller screens */
     }
 
     .cd-timeline__content {
