@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     // Add markers to the map
-    locations.forEach(function(location) {
-        var marker = L.marker(location.coords).addTo(map);
-        marker.bindPopup("<b>" + location.title + "</b><br>" + location.description);
-    });
+    // locations.forEach(function(location) {
+    //     var marker = L.marker(location.coords).addTo(map);
+    //     marker.bindPopup("<b>" + location.title + "</b><br>" + location.description);
+    // });
 
     // Modal functionality
     var modal = document.getElementById("messageModal");
