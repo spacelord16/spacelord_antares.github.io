@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Initialize the map
-    var map = L.map('mapid').setView([51.505, -0.09], 2); // Center at a default location
+    // var map = L.map('mapid').setView([51.505, -0.09], 2); // Center at a default location
 
     // // Add a tile layer (OpenStreetMap tiles)
     // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
