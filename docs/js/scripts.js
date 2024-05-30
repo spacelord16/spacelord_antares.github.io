@@ -1,3 +1,5 @@
+// scripts.js
+
 document.addEventListener("DOMContentLoaded", function() {
     // Initialize the map
     var map = L.map('mapid').setView([51.505, -0.09], 2); // Center at a default location
@@ -31,4 +33,26 @@ document.addEventListener("DOMContentLoaded", function() {
         var marker = L.marker(location.coords).addTo(map);
         marker.bindPopup("<b>" + location.title + "</b><br>" + location.description);
     });
+
+    // Modal functionality
+    var modal = document.getElementById("messageModal");
+    var btn = document.getElementById("messageBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
