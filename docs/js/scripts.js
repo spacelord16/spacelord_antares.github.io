@@ -10,19 +10,24 @@ document.addEventListener("DOMContentLoaded", function() {
     // Array of locations with coordinates and descriptions
     var locations = [
         {
-            coords: [51.505, -0.09],
-            title: "London",
-            description: "Our first trip together to London."
+            coords: [19.0760, 72.8777],
+            title: "Mumbai",
+            // description: "Our first trip together to London."
         },
         {
-            coords: [48.8566, 2.3522],
-            title: "Paris",
-            description: "A romantic getaway in Paris."
+            coords: [18.5204, 73.8567],
+            title: "Pune",
+            // description: "A romantic getaway in Paris."
         },
         {
-            coords: [40.7128, -74.0060],
-            title: "New York",
-            description: "Exploring the city that never sleeps."
+            coords: [37.7749, 122.4194],
+            title: "San Francisco",
+            // description: "Exploring the city that never sleeps."
+        },
+        {
+            coords: [33.4255, 111.9400],
+            title: "Tempe",
+            // description: "Exploring the city that never sleeps."
         }
     ];
 
