@@ -56,7 +56,7 @@ footer {
 
 .cd-timeline {
     overflow: hidden;
-    padding: 6rem 0;  /* Increased top padding */
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -93,19 +93,19 @@ footer {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    width: 150px;
-    height: 150px;
+    width: 540px;
+    height: 960px;
     background: #fff;
     border-radius: 10px;
     border: 5px solid #ff5252;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden; /* Ensure the image fits within the container */
+    overflow: hidden;
 }
 
 .cd-timeline__img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Make sure the image covers the container without stretching */
+    object-fit: cover;
     border-radius: 10px;
 }
 
