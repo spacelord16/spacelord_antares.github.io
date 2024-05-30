@@ -1,5 +1,3 @@
-// scripts.js
-
 document.addEventListener("DOMContentLoaded", function() {
     // Initialize the map
     var map = L.map('mapid').setView([51.505, -0.09], 2); // Center at a default location
