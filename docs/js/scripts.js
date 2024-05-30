@@ -9,26 +9,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Array of locations with coordinates and descriptions
     var locations = [
-        {
-            coords: [19.0760, 72.8777],
-            title: "Mumbai",
-            // description: "Our first trip together to London."
-        },
-        {
-            coords: [18.5204, 73.8567],
-            title: "Pune",
-            // description: "A romantic getaway in Paris."
-        },
-        {
-            coords: [37.7749, 122.4194],
-            title: "San Francisco",
-            // description: "Exploring the city that never sleeps."
-        },
-        {
-            coords: [33.4255, 111.9400],
-            title: "Tempe",
-            // description: "Exploring the city that never sleeps."
-        }
+        // {
+        //     coords: [19.0760, 72.8777],
+        //     title: "Mumbai",
+        //     // description: "Our first trip together to London."
+        // },
+        // {
+        //     coords: [18.5204, 73.8567],
+        //     title: "Pune",
+        //     // description: "A romantic getaway in Paris."
+        // },
+        // {
+        //     coords: [37.7749, 122.4194],
+        //     title: "San Francisco",
+        //     // description: "Exploring the city that never sleeps."
+        // },
+        // {
+        //     coords: [33.4255, 111.9400],
+        //     title: "Tempe",
+        //     // description: "Exploring the city that never sleeps."
+        // }
     ];
 
     // Add markers to the map
