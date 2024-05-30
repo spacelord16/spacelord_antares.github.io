@@ -49,11 +49,11 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: #fff;
-    color: #a90b0b;
+    color: #f35b5b;
 }
 
 h1, h2 {
-    color: #333;
+    color: #d5c9c9;
 }
 
 main {
