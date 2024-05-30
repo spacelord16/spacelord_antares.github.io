@@ -99,12 +99,13 @@ footer {
     border-radius: 10px;
     border: 5px solid #ff5252;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensure the image fits within the container */
 }
 
 .cd-timeline__img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Make sure the image covers the container without stretching */
     border-radius: 10px;
 }
 
